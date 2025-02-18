@@ -6,6 +6,13 @@
 /**
  *
  * @author aaki1
+
+ run:
+5
+    1 
+   2 3 
+  4 5 
+BUILD SUCCESSFUL (total time: 5 seconds)
  */
 import java.util.*;
 public class question_24 {
