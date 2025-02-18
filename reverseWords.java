@@ -7,16 +7,17 @@ import java.util.*;
  *
  * @author aaki1
  */
-public class question_10 {
-    public static String reverse(String[] str){
-//        String[] sam=str.split(" ");
-//        String s="";
-//        //System.out.println(sam[1]);
-//        for(int i=sam.length-1;i>=0;i--){
-//            s+=sam[i]+" ";
-//        }
+ public static String reverse(String str){
+        if (str.isEmpty() || !str.contains(" ")) {
+            return str;
+        }
+        int firstindex=str.indexOf(" ");
+        
+        String firstword=str.substring(0,firstindex);
+        
+        String rem=str.substring(firstindex+1);
             
-        return s;
+        return reverse(rem)+" "+firstword;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
